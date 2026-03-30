@@ -72,7 +72,11 @@ func (t *Toggle) Enter() (restore func() error, err error) {
 	}
 
 	return func() error {
-		defer clearLock()
+		defer func() {
+			if err := clearLock(); err != nil {
+				fmt.Fprintf(os.Stderr, "mutable: clear lock: %v\n", err)
+			}
+		}()
 		return fn()
 	}, nil
 }
@@ -85,7 +89,11 @@ func Exit() error {
 		return err
 	}
 	t := New(lf.Root, Method(lf.Method))
-	defer clearLock()
+	defer func() {
+		if err := clearLock(); err != nil {
+			fmt.Fprintf(os.Stderr, "mutable: clear lock: %v\n", err)
+		}
+	}()
 
 	switch Method(lf.Method) {
 	case MethodChattr:
