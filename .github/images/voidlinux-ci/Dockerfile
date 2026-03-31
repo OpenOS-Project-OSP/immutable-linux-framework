@@ -7,9 +7,17 @@
 #
 # Void uses xbps; there is no /bin/sh by default in the slim image so we
 # create the symlink explicitly.
+#
+# VOIDLINUX_REPO can be overridden at build time to use a different mirror
+# if the default (alpha.de.repo.voidlinux.org) is unreachable from CI.
+ARG VOIDLINUX_REPO=https://repo-us.voidlinux.org/current
+
 FROM voidlinux/voidlinux:latest
 
-RUN xbps-install -Syu xbps \
+ARG VOIDLINUX_REPO
+
+RUN echo "repository=${VOIDLINUX_REPO}" > /etc/xbps.d/00-repository-main.conf \
+ && xbps-install -Syu xbps \
  && xbps-install -Sy \
       bash \
       tar \
