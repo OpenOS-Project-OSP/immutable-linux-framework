@@ -2,6 +2,7 @@ name: Build CI images
 
 on:
   push:
+    if: github.repository == 'Interested-Deving-1896/immutable-linux-framework'
     branches: ["main"]
     paths:
       - ".github/images/**"
