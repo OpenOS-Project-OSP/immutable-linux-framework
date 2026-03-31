@@ -10,7 +10,7 @@
 #
 # VOIDLINUX_REPO can be overridden at build time to use a different mirror
 # if the default (alpha.de.repo.voidlinux.org) is unreachable from CI.
-ARG VOIDLINUX_REPO=https://repo-us.voidlinux.org/current
+ARG VOIDLINUX_REPO=https://repo-de.voidlinux.org/current
 
 FROM voidlinux/voidlinux:latest
 
