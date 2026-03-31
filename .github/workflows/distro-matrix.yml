@@ -41,8 +41,8 @@ jobs:
           context: ${{ matrix.context }}
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER }}/${{ matrix.image }}:latest
-            ghcr.io/${{ env.OWNER }}/${{ matrix.image }}:${{ github.sha }}
+            ghcr.io/interested-deving-1896/${{ matrix.image }}:latest
+            ghcr.io/interested-deving-1896/${{ matrix.image }}:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
           build-args: |
