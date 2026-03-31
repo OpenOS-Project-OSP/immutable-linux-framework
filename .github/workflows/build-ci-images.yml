@@ -36,8 +36,8 @@ jobs:
           context: .github/images/opensuse-tumbleweed-ci
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER }}/opensuse-tumbleweed-ci:latest
-            ghcr.io/${{ env.OWNER }}/opensuse-tumbleweed-ci:${{ github.sha }}
+            ghcr.io/interested-deving-1896/opensuse-tumbleweed-ci:latest
+            ghcr.io/interested-deving-1896/opensuse-tumbleweed-ci:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
             org.opencontainers.image.description=openSUSE Tumbleweed with tar+git+sh for GitHub Actions
@@ -69,8 +69,8 @@ jobs:
           context: .github/images/voidlinux-ci
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER }}/voidlinux-ci:latest
-            ghcr.io/${{ env.OWNER }}/voidlinux-ci:${{ github.sha }}
+            ghcr.io/interested-deving-1896/voidlinux-ci:latest
+            ghcr.io/interested-deving-1896/voidlinux-ci:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
             org.opencontainers.image.description=Void Linux with tar+git+sh for GitHub Actions
