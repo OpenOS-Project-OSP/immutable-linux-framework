@@ -47,4 +47,4 @@ jobs:
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
           build-args: |
-            VOIDLINUX_REPO=https://repo-de.voidlinux.org/current
+            VOIDLINUX_REPO=https://repo.voidlinux.org/current
