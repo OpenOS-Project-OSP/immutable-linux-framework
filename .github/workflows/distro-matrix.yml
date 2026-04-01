@@ -23,6 +23,7 @@ jobs:
             context: .github/images/opensuse-tumbleweed-ci
           - image: voidlinux-ci
             context: .github/images/voidlinux-ci
+            continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 
@@ -47,4 +48,4 @@ jobs:
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
           build-args: |
-            VOIDLINUX_REPO=https://repo.voidlinux.org/current/x86_64
+            VOIDLINUX_REPO=https://mirrors.servercentral.com/voidlinux/current
