@@ -5,7 +5,7 @@
 // upper layer blended with compressed read-only DwarFS lower layers.
 // This adapter shells out to the `bdfs` CLI and `bdfs_daemon`.
 //
-// Upstream: https://github.com/Interested-Deving-1896/btrfs-dwarfs-framework
+// Upstream: https://gitlab.com/OSPF1896/btrfs-dwarfs-framework
 package btrfsdwarfs
 
 import (

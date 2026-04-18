@@ -144,7 +144,7 @@ packages:
 
 ## btrfs-dwarfs
 
-**Origin:** [btrfs-dwarfs-framework](https://github.com/Interested-Deving-1896/btrfs-dwarfs-framework)  
+**Origin:** [btrfs-dwarfs-framework](https://gitlab.com/OSPF1896/btrfs-dwarfs-framework)  
 **Language:** C (kernel module) + C (userspace daemon/CLI)  
 **License:** see upstream
 
