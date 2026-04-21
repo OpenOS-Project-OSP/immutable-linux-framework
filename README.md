@@ -12,7 +12,7 @@ A distro-agnostic, architecture-agnostic framework for building immutable Linux 
 | `ashos` | [ashos/ashos](https://github.com/ashos/ashos) | BTRFS snapshot tree | Multi-distro, hierarchical snapshot management |
 | `frzr` | [ChimeraOS/frzr](https://github.com/ChimeraOS/frzr) | Read-only BTRFS subvolume deploy | Gaming/appliance, image-based deployment |
 | `akshara` | [blend-os/akshara](https://github.com/blend-os/akshara) | YAML-declared system rebuild | Declarative, container-native distros |
-| `btrfs-dwarfs` | [btrfs-dwarfs-framework](https://gitlab.com/OSPF1896/btrfs-dwarfs-framework) | BTRFS+DwarFS hybrid blend layer | Storage-constrained, high-compression roots |
+| `btrfs-dwarfs` | [btrfs-dwarfs-framework](https://gitlab.com/openos-project/linux-kernel_filesystem_deving/btrfs-dwarfs-framework) | BTRFS+DwarFS hybrid blend layer | Storage-constrained, high-compression roots |
 
 > **nearly** (blend-os/nearly) is absorbed into the `mutable` core module as the toggle-immutability primitive.
 
