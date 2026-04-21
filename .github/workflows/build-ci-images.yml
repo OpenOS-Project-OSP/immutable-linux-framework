@@ -10,7 +10,7 @@ on:
 
 jobs:
   opensuse-tumbleweed-ci:
-    if: github.repository == 'Interested-Deving-1896/immutable-linux-framework'
+    if: github.repository == 'OSPF1896/immutable-linux-framework'
     name: opensuse-tumbleweed-ci
     runs-on: ubuntu-latest
     permissions:
@@ -44,7 +44,7 @@ jobs:
             org.opencontainers.image.description=openSUSE Tumbleweed with tar+git+sh for GitHub Actions
 
   voidlinux-ci:
-    if: github.repository == 'Interested-Deving-1896/immutable-linux-framework'
+    if: github.repository == 'OSPF1896/immutable-linux-framework'
     name: voidlinux-ci
     runs-on: ubuntu-latest
     permissions:

@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-ci-images:
-    if: github.repository == 'Interested-Deving-1896/immutable-linux-framework'
+    if: github.repository == 'OSPF1896/immutable-linux-framework'
     name: "Build CI image: ${{ matrix.image }}"
     runs-on: ubuntu-latest
     permissions:
